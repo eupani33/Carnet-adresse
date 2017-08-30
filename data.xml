@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clients>
+    <client>
+        <nom>Bottaro</nom>
+        <prenom>Eric</prenom>
+        <email>ebottaro@bouyguestelecom.fr</email>
+        <tel>0660315305</tel>
+    </client>
+     <client>
+        <nom>CANTEL</nom>
+        <prenom>Harold</prenom>
+        <email>HCANTEL@bouyguestelecom.fr</email>
+        <tel>0660314823</tel>
+    </client>
+    <client>
+        <nom>CARON</nom>
+        <prenom>Patrice</prenom>
+        <email>PCARON@bouyguestelecom.fr</email>
+        <tel>0668443834</tel>
+    </client>
+    <client>
+        <nom>COLOMB</nom>
+        <prenom>Amelie</prenom>
+        <email>AMCOLOMB@bouyguestelecom.fr</email>
+        <tel>0660311449</tel>
+    </client>
+    <client>
+        <nom>Delatre</nom>
+        <prenom>Julien</prenom>
+        <email>"</email>
+        <tel>06 65 79 65 17</tel>
+    </client>
+    <client>
+        <nom>ERMERY</nom>
+        <prenom>Christophe</prenom>
+        <email>CHERMERY@bouyguestelecom.fr</email>
+        <tel>0650692045</tel>
+    </client>
+    <client>
+        <nom>Favres</nom>
+        <prenom>Pierre-Louis</prenom>
+        <email> </email>
+        <tel> </tel>
+    </client>
+    <client>
+        <nom>Frugier</nom>
+        <prenom>Yan</prenom>
+        <email>YFRUGIER@bouyguestelecom.fr</email>
+        <tel>0621805576</tel>
+    </client>
+    <client>
+        <nom>Suc</nom>
+        <prenom>Laurence</prenom>
+        <email>LSUC@bouyguestelecom.fr</email>
+        <tel>0660366397</tel>
+    </client>
+    <client>
+        <nom>THANG</nom>
+        <prenom>Eric</prenom>
+        <email>ETHANG@bouyguestelecom.fr</email>
+        <tel>0661315535</tel>
+    </client>
+</clients>
