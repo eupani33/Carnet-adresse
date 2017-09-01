@@ -29,15 +29,15 @@ class Carnet:
         print("\nAjout d'un contact")
         try:
             nom = input("Son nom: ")
-            if nom in self.carnet:
+            if nom in self.Individus:
                 print("Ce contact existe déjà.")
                 print("Voulez-vous le modifier ?")
             else:
                 prenom = input("Son Prénom :")
                 email = input("Son email : ")
                 telephone = input("Son téléphone : ")
-                nom = Individus(nom, prenom, email, telephone)
-                carnet.ajouter(nom)
+                nouveau = Individus(nom, prenom, email, telephone)
+                self.Individus.append(nouveau)
 
         except IOError:
             '''Carnet non créé : vérification impossible'''
@@ -48,8 +48,8 @@ class Carnet:
 
 
     def afficher(self):
-        for client in self.Individus:
-            client.afficher()
+        for individus in self.Individus:
+            individus.afficher()
 
     def charger(self, nomFichier):
         tree = ET.parse(nomFichier)
@@ -62,8 +62,12 @@ class Carnet:
 
 
     def rechercher(self):
-        exit(0)
-
+        print("Recherche d'un contact")
+        recherche = input("Son nom : ")
+        if recherche in self.Individus:
+            print("Nom :{0} --- Prénom : {1} ---  Mail :{2} ---  Téléphone :{3} ".format(self.nom, self.prenom, self.email, self.tel))
+        else:
+            print("Contact absent du listing.")
 
     def supprimer(self):
         exit(0)
@@ -126,7 +130,6 @@ while running:
         elif rep == 7:
             exit()
 
-        #Clause petit malin
         else :
             print("Veuillez entrer un choix valide")
 

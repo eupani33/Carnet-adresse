@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clients>
+    <client>
+        <nom>Botta</nom>
+        <prenom>Eric</prenom>
+        <email>botta@telecom.fr</email>
+        <tel>0505050505</tel>
+    </client>
+     <client>
+        <nom>CANT</nom>
+        <prenom>Har</prenom>
+        <email>HCANT@telecom.fr</email>
+        <tel>0314823</tel>
+    </client>
+    <client>
+        <nom>CARO</nom>
+        <prenom>riquettee</prenom>
+        <email>CARO@telecom.fr</email>
+        <tel>06787878834</tel>
+    </client>
+    <client>
+        <nom>LOMB</nom>
+        <prenom>Amelie</prenom>
+        <email>LOMB@telecom.fr</email>
+        <tel>0664785449</tel>
+    </client>
+    <client>
+        <nom>latre</nom>
+        <prenom>Jule</prenom>
+        <email> latre@telecom.fr</email>
+        <tel>00477747</tel>
+    </client>
+    <client>
+        <nom>MERY</nom>
+        <prenom>Christophe</prenom>
+        <email>MERY@telecom.fr</email>
+        <tel>0657878745</tel>
+    </client>
+    <client>
+        <nom>avres</nom>
+        <prenom>Pierre</prenom>
+        <email>AVRES@gmail.com</email>
+        <tel>0102030405 </tel>
+    </client>
+    <client>
+        <nom>sangier</nom>
+        <prenom>Yan</prenom>
+        <email>sanglier@telecom.fr</email>
+        <tel>0657846</tel>
+    </client>
+    <client>
+        <nom>Sucette</nom>
+        <prenom>Laure</prenom>
+        <email>sucette@telecom.fr</email>
+        <tel>0678514797</tel>
+    </client>
+    <client>
+        <nom>ANG</nom>
+        <prenom>Eric</prenom>
+        <email>ANG@elecom.fr</email>
+        <tel>0645785535</tel>
+    </client>
+</clients>
