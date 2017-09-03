@@ -63,9 +63,11 @@ class Carnet:
 
     def rechercher(self):
         print("Recherche d'un contact")
-        recherche = input("Son nom : ")
-        if recherche in self.Individus:
-            print("Nom :{0} --- Prénom : {1} ---  Mail :{2} ---  Téléphone :{3} ".format(self.nom, self.prenom, self.email, self.tel))
+        recherche = input("Saisisez le nom")
+        for individu in self.Individus:
+            if recherche == individu.nom:
+                print("Nom :{0} --- Prénom : {1} ---  Mail :{2} ---  Téléphone :{3} ".format(individu.nom,individu.prenom,individu.email,                                                                                    individu.tel))
+
         else:
             print("Contact absent du listing.")
 
