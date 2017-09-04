@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# nom de fichier : xml.py
+# nom de fichier : Carnet.py
 
 import xml.etree.ElementTree as ET
 
