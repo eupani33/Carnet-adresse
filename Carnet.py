@@ -15,7 +15,10 @@ class Individus:
         self.tel = tel
 
     def afficher(self):
-        print("Nom :{0} --- Prénom : {1} ---  Mail :{2} ---  Téléphone :{3} ".format(self.nom, self.prenom, self.email, self.tel ))
+        print("Nom :{0} --- Prénom : {1} ---  Mail :{2} ---  Téléphone :{3} ".format(self.nom,
+                                                                                     self.prenom,
+                                                                                     self.email,
+                                                                                     self.tel ))
 
 class Carnet:
     def __init__(self):
@@ -54,22 +57,31 @@ class Carnet:
     def charger(self, nomFichier):
         tree = ET.parse(nomFichier)
         for client in tree.iter('client'):
-            self.charger_fichier(Individus(client.find("nom").text, client.find("prenom").text, client.find("email").text, client.find("tel").text))
+            self.charger_fichier(Individus(client.find("nom").text,
+                                           client.find("prenom").text,
+                                           client.find("email").text,
+                                           client.find("tel").text))
 
     def modifier(self):
         exit(0)
 
-
-
     def rechercher(self):
         print("Recherche d'un contact")
-        recherche = input("Saisisez le nom")
-        for individu in self.Individus:
-            if recherche == individu.nom:
-                print("Nom :{0} --- Prénom : {1} ---  Mail :{2} ---  Téléphone :{3} ".format(individu.nom,individu.prenom,individu.email,                                                                                    individu.tel))
+        recherche = input("Son nom : ")
+        flag = 0
+        for personne in self.Individus:
+            if recherche == personne.nom:
+                flag =1
+                print("\n.......Resultat trouvé.........\n")
+                print("\nNom :{0} --- Prénom : {1} ---  Mail :{2} ---  Téléphone :{3} \n".format(personne.nom,
+                                                                                             personne.prenom,
+                                                                                             personne.email,
+                                                                                             personne.tel))
+                break
 
-        else:
-            print("Contact absent du listing.")
+        if flag ==0:
+           print("Contact absent du listing.")
+
 
     def supprimer(self):
         exit(0)
@@ -133,13 +145,13 @@ while running:
             exit()
 
         else :
-            print("Veuillez entrer un choix valide")
+            print("\nVeuillez entrer un choix valide\n")
 
     except NameError:
-        print("Veuillez entrer un choix valide.")
+        print("\nVeuillez entrer un choix valide.\n")
         continue
     except SyntaxError:
-        print("Veuillez entrer un choix valide.")
+        print("\nVeuillez entrer un choix valide.")
         continue
     except EOFError:
         print("\nVeuillez entrer 7 comme choix pour quitter le programme.")
